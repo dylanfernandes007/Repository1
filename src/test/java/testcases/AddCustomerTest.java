@@ -13,7 +13,7 @@ public class AddCustomerTest extends BaseTest {
 	@Test(dataProviderClass = TestUtil.class,dataProvider = "dp")
 	public void addCustomer(String firstName, String lastName, String postCode) {
 		
-		click("addCustomer_CSS");
+		click("addCustomer_CSS");     // This is a single-line comment
 		type("firstName_CSS",firstName);
 		type("lastName_CSS",lastName);
 		type("postcode_CSS",postCode);
@@ -29,4 +29,5 @@ public class AddCustomerTest extends BaseTest {
 			e.printStackTrace();
 		}
 }
+
 }
